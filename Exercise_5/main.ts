@@ -6,7 +6,9 @@ class Student {
   ) {}
 
   displayInfo() {
-    console.log(this.studentName, this.studentAge, this.studentGrade);
+    console.log(
+      `${this.studentName} is ${this.studentAge} years old with a grade average of ${this.studentGrade}%`
+    );
   }
 
   isPassing(gradeThreshold: number) {

@@ -5,7 +5,12 @@ let Student = /** @class */ (function () {
     this.studentGrade = studentGrade;
   }
   Student.prototype.displayInfo = function () {
-    console.log(this.studentName, this.studentAge, this.studentGrade);
+    console.log(
+      ""
+        .concat(this.studentName, " is ")
+        .concat(this.studentAge, " years old with a grade average of ")
+        .concat(this.studentGrade, "%")
+    );
   };
   Student.prototype.isPassing = function (gradeThreshold) {
     if (this.studentGrade >= gradeThreshold) {
